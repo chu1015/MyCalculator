@@ -1,0 +1,32 @@
+table{
+    background-size: 150px 240px;
+    background-color: fuchsia;
+    
+    
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    background-size: 50px;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+#result {
+    min-height: 60px;
+
+    width: 138px;
+    /* height: 90px; */
+    background-color: blueviolet;
+    position: relative;
+    margin: 0;
+    text-align: right;
+    text-align: bottom;
+    font-size: 50px;
+    
+}

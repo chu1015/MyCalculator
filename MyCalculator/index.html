@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Calculator</title>   
+    <link rel="stylesheet" href="index.css"> 
+    <!-- <style>
+        button {
+            width: 30px;
+            height: 30px;
+            background-size: 50px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        button:hover {
+            background-color: aqua;
+            cursor: pointer;
+        }
+
+        #result {
+            min-height: 20px;
+
+            width: 138px;
+            height: 90px;
+            background-color: blueviolet;
+            position: relative;
+            margin: 0;
+            text-align: center;
+            font-size: 50px;
+            
+        }
+
+    </style> -->
+
+</head>
+
+<body>
+    <!-- <p><a href="https://www.desmos.com/scientific" target="_blank">參考網路上面的計算機</a></p> -->
+    <p id="result"></p>
+
+    <table>
+
+        <div>
+            <tr>
+                <!-- <th><button onclick="numClick('')"></button></th> -->
+                <th colspan="3"><button onclick="clrClick('')" style="width: 60px;">C</button></th>
+                <!-- <th><button onclick="numClick('←')">←</button></th> -->
+
+                <th><button onclick="opClick('/')">÷</button></th>
+            </tr>
+        </div>
+        <div>
+            <tr>
+                <td><button onclick="numClick('7')">7</button></td>
+                <td><button onclick="numClick('8')">8</button></td>
+                <td><button onclick="numClick('9')">9</button></td>
+
+                <td><button onclick="opClick('*')">×</button></td>
+            </tr>
+        </div>
+
+        <div>
+            <tr>
+                <td><button onclick="numClick('4')">4</button></td>
+                <td><button onclick="numClick('5')">5</button></td>
+                <td><button onclick="numClick('6')">6</button></td>
+
+                <td><button onclick="opClick('-')">-</button></td>
+            </tr>
+        </div>
+
+        <div>
+            <tr>
+                <td><button onclick="numClick('1')">1</button></td>
+                <td><button onclick="numClick('2')">2</button></td>
+                <td><button onclick="numClick('3')">3</button></td>
+
+                <td><button onclick="opClick('+')">+</button></td>
+            </tr>
+        </div>
+        <div>
+            <tr>
+                <td><button onclick="numClick('00')">00</button></td>
+                <td><button onclick="numClick('0')">0</button></td>
+                <td><button onclick="numClick('.')">.</button></td>
+
+                <td><button onclick="answer('')">=</button></td>
+            </tr>
+        </div>
+    </table>
+
+
+    <!-- <script>
+        var firstNum;
+        var op;
+        function numClick(num) {
+            document.getElementById("result").innerHTML += num;
+        }
+
+        function opClick(str) {
+            //紀錄畫面上的數值
+            firstNum = document.getElementById("result").innerHTML;
+            //清空畫面
+            document.getElementById("result").innerHTML = "";
+            op = str;
+        }
+        function answer() {
+            var Int = document.getElementById("result").innerHTML;
+
+            switch (op) {
+                case '+':
+                    temp = parseFloat(firstNum) + parseFloat(Int);
+                    break;
+                case '-':
+                    temp = parseFloat(firstNum) - parseFloat(Int);
+                    break;
+                case '*':
+                    temp = parseFloat(firstNum) * parseFloat(Int);
+                    break;
+                case '/':
+                    temp = parseFloat(firstNum) / parseFloat(Int);
+                    break;
+            }
+            document.getElementById("result").innerHTML = temp;
+
+            //清空
+            firstNum = 0;
+            op = '';
+        }
+        function clrClick() {
+            document.getElementById("result").innerHTML = '';
+        }
+
+    </script> -->
+    <script src="index.js"></script>
+</body>
+
+</html>
